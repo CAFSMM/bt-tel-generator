@@ -1,0 +1,21 @@
+{
+    "name": "Centro de Eventos",
+    "type": "event_center",
+    "nodes": [
+        {
+            "id":1,
+            "days":[1,2,3,4,5],
+            "hours":[9,10,11,12,13,14,15,16,17,18],
+            "targets": {
+                "temp_cel":22,
+                "rh":50,
+                "co2": 800
+            },
+            "deviation":{
+                "temp_cel":2,
+                "rh":10,
+                "co2": 200
+            }
+        }
+    ]
+}
