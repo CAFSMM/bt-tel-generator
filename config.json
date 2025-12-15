@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "start_date": "2025-01-01:00:00:00",
+  "end_date": "2025-12-31:23:59:59",
+  "aggregation":"1h",
+  "output_directory": "output/",
+  "zone_list":[
+    "zone-1",
+    "zone-2",
+    "zone-3"
+  ],
+  "params": [
+    {
+      "name": "temp_cel",
+      "min": 10,
+      "max": 35
+    },
+    {
+      "name": "rh",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "co2",
+      "min": 100,
+      "max": 1800
+    },
+    {
+      "name": "current",
+      "min": 0,
+      "max": 1000
+    }
+  ]
+}
