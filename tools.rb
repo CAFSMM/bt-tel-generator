@@ -1,14 +1,7 @@
 require 'json'
 require 'date'
 
-# # Load all JSON files from the models directory
-# json_files = Dir[File.join(__dir__, 'models', '*.json')]
-
-# # List all loaded JSON files
-# puts "Loaded model JSON files:"
-# json_files.each do |file|
-#     puts "  - #{File.basename(file)}"
-# end
+$zone_data_model = nil
 
 def load_model (mode_type)
     file_path = File.join(__dir__, 'models', "#{mode_type}.json")
@@ -21,4 +14,8 @@ def load_model (mode_type)
         puts "Model file #{mode_type}.json not found."
         return nil
     end  
+end
+
+def set_model (model_type)
+    $zone_data_model = load_model(model_type)
 end
