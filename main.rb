@@ -1,23 +1,24 @@
 require 'date'
 require 'json'
 
-start_date = ARGV[0] || '2025-01-01'
-end_date = ARGV[1] || '2025-01-31'
+#Configure program
 
-start_date +=" 00:00:00"
-end_date +=" 23:59:59"
+start_date = (ARGV[0] || '2025-01-01') + " 00:00:00"
+end_date = (ARGV[1] || '2025-01-31') + " 23:59:59"
+
+ONE_HOUR = 3600
 
 config_file = File.open("config.json", "r")
 $CONFIG = JSON.parse(config_file.read)
 config_file.close
 
+system('clear') || system('cls')
+
+#---------------------------------------------------------------------------------------------
+# Create output folder if it doesn't exist
 output_folder = ARGV[2] || './output/'
 Dir.mkdir(output_folder) unless Dir.exist?(output_folder)
 Dir.chdir(output_folder)
-
-ONE_HOUR = 3600
-
-system('clear') || system('cls')
 
 start_date = Date.parse(start_date).strftime('%Y-%m-%d %H:%M:%S')
 end_date = Date.parse(end_date).strftime('%Y-%m-%d %H:%M:%S')

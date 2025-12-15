@@ -5,9 +5,10 @@
   "aggregation":"1h",
   "output_directory": "output/",
   "zone_list":[
-    "zone-1",
-    "zone-2",
-    "zone-3"
+    {
+      "name":"01-01",
+      "type":"office"
+    }
   ],
   "params": [
     {
