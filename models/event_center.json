@@ -1,0 +1,63 @@
+{
+    "name": "Centro de Eventos",
+    "type": "event_center",
+    "nodes": [
+        {
+            "name":"week days",
+            "days":[1,2,3,4,5],
+            "hours":[9,10,11,12,13,14,15,16,17,18],
+            "params": {
+                "temp_cel": {
+                    "target":22,
+                    "deviation":2
+                },
+                "rh": {
+                    "target":50,
+                    "deviation":10
+                },
+                "co2": {
+                    "target":1200,
+                    "deviation":100
+                }
+            }
+        },
+        {
+            "name":"weekend",
+            "days":[6,7],
+            "hours":[9,10,11,12,13,14,15,16,17,18],
+            "params": {
+                "temp_cel": {
+                    "target":22,
+                    "deviation":2
+                },
+                "rh": {
+                    "target":50,
+                    "deviation":10
+                },
+                "co2": {
+                    "target":1100,
+                    "deviation":200
+                }
+            }
+        },
+                {
+            "name":"default",
+            "days":[],
+            "hours":[],
+            "params": {
+                "temp_cel": {
+                    "target":22,
+                    "deviation":2
+                },
+                "rh": {
+                    "target":50,
+                    "deviation":10
+                },
+                "co2": {
+                    "target":800,
+                    "deviation":200
+                }
+            }
+        }
+    ]
+}
