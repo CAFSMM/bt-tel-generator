@@ -22,8 +22,6 @@ system('clear') || system('cls')
 start_date = Date.parse(start_date).strftime('%Y-%m-%d %H:%M:%S')
 end_date = Date.parse(end_date).strftime('%Y-%m-%d %H:%M:%S')
 
-#start_date = start_date.to_time + 3600
-
 $CONFIG['zone_list'].each do |zone|
   $CONFIG['params'].each do |param|
     file_name = "#{param['name']}-#{zone}.ts"
