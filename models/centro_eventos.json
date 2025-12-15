@@ -3,10 +3,40 @@
     "type": "event_center",
     "nodes": [
         {
-            "id":1,
+            "name":"week days",
             "days":[1,2,3,4,5],
             "hours":[9,10,11,12,13,14,15,16,17,18],
-            "targets": {
+            "target": {
+                "temp_cel":22,
+                "rh":50,
+                "co2": 800
+            },
+            "deviation":{
+                "temp_cel":2,
+                "rh":10,
+                "co2": 200
+            }
+        },
+        {
+            "name":"weekend",
+            "days":[6,7],
+            "hours":[9,10,11,12,13,14,15,16,17,18],
+            "target": {
+                "temp_cel":22,
+                "rh":50,
+                "co2": 800
+            },
+            "deviation":{
+                "temp_cel":2,
+                "rh":10,
+                "co2": 200
+            }
+        },
+                {
+            "name":"default",
+            "days":[],
+            "hours":[],
+            "target": {
                 "temp_cel":22,
                 "rh":50,
                 "co2": 800
