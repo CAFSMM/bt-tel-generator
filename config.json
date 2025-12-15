@@ -7,7 +7,7 @@
   "zone_list":[
     {
       "name":"01-01",
-      "type":"office"
+      "type":"event_center"
     }
   ],
   "params": [
